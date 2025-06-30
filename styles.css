@@ -519,10 +519,14 @@ header.scrolled {
 
 /* Cards */
 .cards-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 24px;
+  display: flex;                  
+  justify-content: center;       
+  gap: 24px;                     
+  flex-wrap: nowrap;            
+  overflow-x: auto;              
+  padding: 20px;
 }
+
 
 @media (min-width: 640px) {
     .cards-grid {
