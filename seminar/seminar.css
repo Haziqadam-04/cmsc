@@ -486,6 +486,144 @@ header.scrolled {
     margin-right: 12px;
 }
 
+/* Prizes & Jury */
+.prizes-jury-content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+@media (min-width: 768px) {
+    .prizes-jury-content {
+        flex-direction: row;
+    }
+}
+
+.prizes-section,
+.jury-section {
+    flex: 1;
+}
+
+.prizes-section h3,
+.jury-section h3 {
+    font-size: 1.75rem;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.prize-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+@media (min-width: 640px) {
+    .prize-cards {
+        flex-direction: row;
+    }
+}
+
+.prize-card {
+    flex: 1;
+    background-color: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    padding: 24px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.prize-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.prize-medal {
+    font-size: 2rem;
+    color: var(--primary-gold);
+    margin-bottom: 16px;
+    position: relative;
+    display: inline-block;
+}
+
+.prize-medal span {
+    position: absolute;
+    font-size: 0.875rem;
+    font-weight: 700;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--neutral-800);
+}
+
+.prize-amount {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--primary-blue);
+}
+
+.special-prizes {
+    background-color: var(--neutral-100);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.special-prizes h4 {
+    margin-bottom: 16px;
+    color: var(--primary-blue);
+}
+
+.special-prizes ul {
+    list-style: none;
+}
+
+.special-prizes li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--neutral-300);
+}
+
+.special-prizes li:last-child {
+    border-bottom: none;
+}
+
+.jury-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+@media (min-width: 1024px) {
+    .jury-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.jury-member {
+    text-align: center;
+}
+
+.jury-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 16px;
+    border: 4px solid var(--primary-gold);
+}
+
+.jury-member h4 {
+    margin-bottom: 4px;
+}
+
+.jury-member p {
+    color: var(--neutral-600);
+    font-size: 0.9rem;
+}
+
+
 /* Footer */
 footer {
     background-color: var(--primary-blue);
