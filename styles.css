@@ -522,7 +522,7 @@ header.scrolled {
   display: flex;                  
   justify-content: center;       
   gap: 24px;                     
-  flex-wrap: nowrap;            
+  flex-wrap: wrap;            
   overflow-x: auto;              
   padding: 20px;
 }
@@ -547,6 +547,9 @@ header.scrolled {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     padding: 32px 24px;
     text-align: center;
+    max-width: 280px; 
+    min-width: 220px; 
+    word-wrap: break-word;
 }
 
 .card:hover {
@@ -585,10 +588,18 @@ header.scrolled {
     opacity: 0.3;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .timeline::before {
         left: 31px;
     }
+    .card {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .cards-grid {
+    justify-content: center;
+  }
 }
 
 /* Prizes & Jury */
@@ -933,6 +944,37 @@ header.scrolled {
     border-radius: 8px;
     margin-top: 16px;
     display: none;
+}
+/* Responsive untuk HP (layar kecil) */
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .card__img {
+    height: 150px;
+  }
+
+  .card-int__title {
+    font-size: 1rem;
+  }
+
+  .card-int__button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .form-group label {
+    font-size: 0.9rem;
+  }
 }
 
 /* seminar */
