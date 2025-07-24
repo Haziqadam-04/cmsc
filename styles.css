@@ -422,6 +422,7 @@ header.scrolled {
     }
 }
 
+
 .statistics {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -439,19 +440,27 @@ header.scrolled {
 .stat-box {
     padding: 16px;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(0, 0, 0, 0.3); /* lebih kontras */
     backdrop-filter: blur(4px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 215, 0, 0.2); /* efek glow emas */
 }
 
 .stat-number {
     color: var(--primary-gold);
     font-size: 1.75rem;
     font-weight: 700;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 @media (min-width: 768px) {
     .stat-number {
-        font-size: 2rem;
+        font-size: 2.5rem; /* lebih besar */
     }
 }
 
