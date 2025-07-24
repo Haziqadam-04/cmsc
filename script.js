@@ -253,7 +253,7 @@ window.sendMessage = function() {
   botReply = 'Ya, kami menghadirkan insight mendalam yang juga menarik untuk investor berpengalaman.';
 } 
   else {
-    botReply = 'Wah, aku belum punya info itu. Coba diliat di bagian info lomba dan seminar, dan jika masih ada yang ingin ditanyakan bisa menghubungi kami melalui email stocksummit.ui@gmail.com dan Instagram kami @cmsc.ui';
+    botReply = 'Wah, aku belum punya info itu. Coba diliat di bagian info lomba dan seminar, dan jika masih ada yang ingin ditanyakan bisa menghubungi kami melalui email stocksummit.ui@gmail.com dan Instagram kami @Stocksummit.ui';
     
   }
   setTimeout(() => {
