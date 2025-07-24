@@ -1003,7 +1003,7 @@ header.scrolled {
 }
 
 .card__img.img-seminar {
-    background-image: url('https://i.pinimg.com/736x/08/42/0a/08420a20017446fdda37f5d3f132dc88.jpg');; /* ganti dengan path gambar kamu */
+    background-image: url('image/seminar.jpeg');; /* ganti dengan path gambar kamu */
 }
 
 .card-int {
