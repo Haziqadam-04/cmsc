@@ -253,7 +253,8 @@ window.sendMessage = function() {
   botReply = 'Ya, kami menghadirkan insight mendalam yang juga menarik untuk investor berpengalaman.';
 } 
   else {
-    botReply = 'Wah, aku belum punya info itu. Coba DM IG @cmsc.ui atau email ke cmsc@ui.ac.id ya!';
+    botReply = 'Wah, aku belum punya info itu. Coba diliat di bagian info lomba dan seminar, dan jika masih ada yang ingin ditanyakan bisa menghubungi kami melalui email stocksummit.ui@gmail.com dan Instagram kami @cmsc.ui';
+    
   }
   setTimeout(() => {
     messages.innerHTML += `<div class=\"bot\"><b>CMSC Assistant:</b> ${botReply}</div>`;
