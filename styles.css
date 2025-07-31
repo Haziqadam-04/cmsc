@@ -1262,6 +1262,11 @@ footer {
     transform: translate(0);
 }
 
+.team-composition p {
+  margin: 0;
+  line-height: 1.2;
+}
+
 /* Utility Classes */
 .gold-accent {
     color: var(--primary-gold);
